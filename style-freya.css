@@ -1,0 +1,24 @@
+body{
+    background-color:rgb(160, 138, 173); 
+    text-align: center;
+} 
+#title{
+    color:rgb(122, 179, 230);
+}
+#image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#image p{
+    color: rgb(66, 9, 68);
+    font-family: serif;
+    max-width: 14%;
+}
+h1{
+    font-family:monospace;
+}
+#ban{
+   position: absolute; bottom: 50px;
+}
