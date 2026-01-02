@@ -11,6 +11,12 @@ body{
     align-items: center;
     gap: 10px;
 }
+.toolbar a{
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 500;
+}
 .toolbar img{
     height: 35px;
 }
