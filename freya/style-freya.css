@@ -1,0 +1,36 @@
+body{
+    background-color:rgb(160, 138, 173); 
+    text-align: center;
+} 
+.toolbar {
+    display: flex;
+    background-color: rgb(126, 110, 127);
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.toolbar img{
+    height: 35px;
+}
+.title{
+    color:rgb(56, 123, 182);
+}
+.imageBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.imageBox p{
+    color: rgb(66, 9, 68);
+    font-family: serif;
+    max-width: 14%;
+}
+h1{
+    font-family:monospace;
+}
+.ban{
+   position: absolute; bottom: 50px;
+}
