@@ -2,7 +2,7 @@ const injectors = [
       {
         selector: "#navbar",
         load: () => {
-            return fetch("nav.html")
+            return fetch("../freya/nav.html")
                 .then(r => r.text())
                 .then(async html => document.createRange().createContextualFragment(html));
         },
