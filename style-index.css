@@ -1,8 +1,14 @@
 
 body{
-    background-color:rgb(160, 138, 173); 
+    background-color:rgb(30, 30, 30); 
     text-align: center;
 } 
+.toolbar {
+    background-color: rgb(57, 57, 57);
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+}
 .title{
     color:rgb(122, 179, 230);
 }
@@ -13,7 +19,7 @@ body{
     justify-content: center;
 }
 .image p{
-    color: rgb(66, 9, 68);
+    color: rgb(26, 26, 26);
     font-family: serif;
     max-width: 14%;
 }
