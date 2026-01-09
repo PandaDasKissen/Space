@@ -9,6 +9,12 @@ const injectors = [
       },
 ]
 
+const link = document.createElement("link");
+  link.rel="icon";
+  link.type="image/png";
+  link.href="../images/icon.png";
+document.head.append(link);
+
 function initInjectors() {
       injectors.forEach(({ selector, load }) => {
         const el = document.querySelector(selector);
