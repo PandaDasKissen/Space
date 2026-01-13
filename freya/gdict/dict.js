@@ -20,21 +20,31 @@ function render(words) {
     words.forEach(word => {
         const wrap = document.createElement("div")
         wrap.className = "wrap"
+            const title = document.createElement("h2")
+                title.className = "wordTitle" 
+                title.textContent = word.Word
+            const trans = document.createElement("p")
+                trans.className = "trans"
+                trans.textContent = "English:"+word.Translation.join(", ")+"\n\n"+word.Explanation
+        const wrap2 = document.createElement("div")
+        wrap2.className = "wrap2"
+            const exam = document.createElement("p")
+                exam.className = "exam"
+                exam.textContent =
+                    word.Examples !== "" ? "Ex: \n"+word.Examples : ""
+            const images = document.createElement("img")
+                images.className = "images"
+                if (word.Img !== "")
+                    images.src = word.Img
+                else 
+                    images.src = "/images/blank.png"
+            const tags = document.createElement("p")
+                tags.className = "tags"
+                tags.textContent = word.Tags
 
-        const title = document.createElement("h2")
-        title.className = "wordTitle" 
-        title.textContent = word.Word
 
-        const trans = document.createElement("p")
-        trans.className = "trans"
-        trans.textContent = "English:"+word.Translation.join(", ")+"\n\n"+word.Explanation
-
-        
-
-        
-
-
-        wrap.append(title,trans)
+        wrap2.append(exam,images,)
+        wrap.append(title,trans,wrap2,tags)
         result.append(wrap)
     });
 }
@@ -62,13 +72,17 @@ function onSearchInput() {
 }
 
 const langButton = document.getElementById("swapLang");
+
 langButton.addEventListener("click",onButtonPress)
 function onButtonPress() {
     Eng2Ger = !Eng2Ger
-    if (Eng2Ger == true)
+    if (Eng2Ger == true) {
         searchInput.placeholder = "english word..."
-    else
+        langButton.textContent = "ENG→GER"
+    } else {
         searchInput.placeholder = "german word..."
+        langButton.textContent = "GER→ENG"
+    }
     searchInput.value = ""
 }
 

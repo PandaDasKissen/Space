@@ -72,7 +72,31 @@ h1{
     white-space: break-spaces;
     text-align: left;
 }
+.wrap2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+.exam {
+    flex: auto;
+    width: 60%;
+    text-align: left;
+    white-space: break-spaces;
+}
+.images{
+    flex: auto;
+    width: 20%;
+}
+.tags {
+    text-align: left;
+    display: block;
+    font-size:.75em;
+    color: rgb(114, 114, 114);
+    padding: 3%;
+}
 .resultHolder{
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
